@@ -1,23 +1,40 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import AppCards from './components/CardsTask/AppCards';
+import Decomp from './components/decomposition/Decomp';
 import './App.css';
 
 function App() {
+  const [app, setApp] = useState(<Decomp />);
+  const [currentClass, setCurrentClass] = useState("decomposition");
+  const apps = [
+    {
+      name: "cards",
+      component: <AppCards />
+    },
+    {
+      name: "decomposition",
+      component: <Decomp />
+    },
+    {
+      name: "",
+      component: ''
+    }
+  ]
+
+  const handleClick = e => {
+    const curApp = apps.find(item => item.name === e.target.className);
+    setApp(curApp.component);
+    setCurrentClass(curApp.name);
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='container'>
+      <header className="header_main">
+        <button className='cards' onClick={handleClick}>Задание №1(Карточки)</button>
+        <button className='decomposition' onClick={handleClick}>Задание №2()</button>
+        <button className="photo" onClick={handleClick}>Задание №3()</button>
       </header>
+      <div className={"app_" + currentClass}>{app}</div>
     </div>
   );
 }

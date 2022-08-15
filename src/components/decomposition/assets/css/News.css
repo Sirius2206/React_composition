@@ -1,0 +1,7 @@
+.news {
+    width: 60%;
+}
+.news-currency {
+    list-style-type: none;
+    display: flex;
+}

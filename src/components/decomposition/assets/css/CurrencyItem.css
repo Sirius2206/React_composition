@@ -1,0 +1,14 @@
+.currency-item {
+    margin-right: 20px;
+}
+
+.currency-item_text {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.currency-item_change {
+    font-weight: lighter;
+    color: gray;
+    margin-left: 5px;
+}

@@ -1,0 +1,16 @@
+.aside {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.aside_link {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.aside_img {
+    width: 150px;
+}

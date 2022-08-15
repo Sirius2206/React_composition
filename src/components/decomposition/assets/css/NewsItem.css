@@ -1,0 +1,20 @@
+.news-item {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.news-item_link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.news-item_link:hover {
+    text-decoration: none;
+}
+.news-item_logo {
+    width: 20px;
+}
+
+.news-item_text {
+    margin-left: 10px;
+}

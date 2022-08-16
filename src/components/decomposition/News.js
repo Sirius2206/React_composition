@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from "react";
+import { nanoid } from "nanoid";
+
 import Today from "./Today";
 import NewsItem from "./NewsItem";
 import CurrencyItem from "./CurrencyItem";
@@ -24,12 +26,12 @@ function News({ news, currency }) {
       </div>
       <ul className="news-list">
         {news.map((item) => (
-          <NewsItem item={item} />
+          <NewsItem key={nanoid()} item={item} />
         ))}
       </ul>
       <ul className="news-currency">
         {currency.map((item) => (
-          <CurrencyItem item={item} />
+          <CurrencyItem key={nanoid()} item={item} />
         ))}
       </ul>
     </div>

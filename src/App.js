@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import AppCards from './components/CardsTask/AppCards';
-import Decomp from './components/decomposition/Decomp';
+import Decomp from './components/decomposition';
+
 import './App.css';
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
   }
   
   return (
-    <div className='container'>
+    <div>
       <header className="header_main">
         <button className='cards' onClick={handleClick}>Задание №1(Карточки)</button>
         <button className='decomposition' onClick={handleClick}>Задание №2()</button>

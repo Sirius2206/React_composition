@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer_block {
+    width: 20%;
+}
+.weather_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather_now {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.weather_forecast {
+    display: flex;
+    flex-direction: column;
+}
+.weather_icon {
+    width: 50px;
+}

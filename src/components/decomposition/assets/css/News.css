@@ -1,6 +1,10 @@
 .news {
     width: 60%;
 }
+
+.news-header {
+    margin-right: 30px;
+}
 .news-currency {
     list-style-type: none;
     display: flex;

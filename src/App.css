@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  
 }
 #root {
   margin: 0;
@@ -10,7 +9,7 @@
 }
 
 .app_decomposition {
-  max-width: 80%;
+  max-width: 90%;
   max-height: 100vh;
   margin: auto;
 }

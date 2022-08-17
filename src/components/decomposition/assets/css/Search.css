@@ -6,8 +6,10 @@
 
 .search_logo {
     position: absolute;
-    left: -180px;
+    left: -110px;
     font-size: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 .search_logo span{
     color: blue;
@@ -41,10 +43,18 @@
     border: 2px solid blue;
 }
 
+.input_hint {
+    color: gray;
+}
+
 .links-bar_list {
     list-style-type: none;
 
     width: 80%;
     display: flex;
     justify-content: space-between;
+}
+
+.footer_tvGuide {
+    line-height: normal;
 }

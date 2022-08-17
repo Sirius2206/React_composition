@@ -2,20 +2,20 @@ import React from "react";
 import aif_logo from "./assets/img/aif_logo.png";
 import aside_pic from "./assets/img/aside_pic.jpg";
 import banner from "./assets/img/banner.jpg";
-import Play_icon from "./assets/img/Play_icon.png";
 import rg_logo from "./assets/img/rg_logo.jpg";
 import ria_logo from "./assets/img/ria_logo.webp";
 import weather_icon from "./assets/img/weather_icon.png";
-import Header from "./Header";
-import News from "./News";
-import Aside from "./Aside";
+import News from "./Header/News";
+import Aside from "./Header/Aside";
 import Search from './Search';
 import Banner from "./Banner";
 import Footer from "./Footer";
 
-import "./assets/css/Decomp.css"
+import "./assets/css/index.css"
 
+//Главный компонент
 function Decomp() {
+  //Имитация вернувшегося запроса со всей информацией
   const serverResponse = {
     "news": [
       {
@@ -146,10 +146,10 @@ function Decomp() {
   return (
     <div className="Decomp-container">
       <header className="header-content">
-        <News news={serverResponse.news} currency={serverResponse.currency} />
-        <Aside asideInfo={serverResponse.asideInfo} />
+        <News {...serverResponse} />
+        <Aside {...serverResponse} />
       </header>
-      <Search searchExample={serverResponse.searchExample}  />
+      <Search {...serverResponse}  />
       <Banner banner={banner} />
       <Footer {...serverResponse}/>
     </div>
@@ -157,17 +157,3 @@ function Decomp() {
 }
 
 export default Decomp;
-/*
-верхняя часть
-    Сейчас в СМИ +дата
-        Список новостей
-    Доп.реклама
-
-Центр
-    Лого
-    Поиск и быстрый доступ
-    баннер
-
-Нижняя часть
-    Список всякого
-*/

@@ -32,7 +32,7 @@ function App() {
     <div>
       <header className="header_main">
         <button className='cards' onClick={handleClick}>Задание №1(Карточки)</button>
-        <button className='decomposition' onClick={handleClick}>Задание №2()</button>
+        <button className='decomposition' onClick={handleClick}>Задание №2(Гундекс)</button>
         <button className="photo" onClick={handleClick}>Задание №3()</button>
       </header>
       <div className={"app_" + currentClass}>{app}</div>

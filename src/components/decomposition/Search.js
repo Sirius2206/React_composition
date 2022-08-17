@@ -2,6 +2,8 @@ import React from "react";
 import "./assets/css/Search.css";
 import { nanoid } from "nanoid";
 
+
+//Компонент для отрисовки строки поиска
 function Search({ searchExample }) {
   return (
     <div className="search">
@@ -59,8 +61,8 @@ function Search({ searchExample }) {
             <button className="input_find">Найти</button>
             <div className="input_arrow" />
           </div>
-          <div className="input_hint">
-            Найдется все. Например, {searchExample}
+          <div>
+            Найдется все. Например, <span  className="input_hint">{searchExample}</span>
           </div>
         </div>
       </div>

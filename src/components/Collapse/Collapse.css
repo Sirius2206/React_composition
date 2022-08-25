@@ -1,0 +1,28 @@
+.closed {
+    display: none;
+}
+
+
+.collapse-container,
+.collapse-head {
+    border: 2px solid black;
+}
+
+.collapse-head {
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightslategray;
+}
+
+.collapse-container {
+    width: 100%;
+    background-color: lightskyblue;
+}
+
+.collapse-btn {
+    height: 30px;
+}
+

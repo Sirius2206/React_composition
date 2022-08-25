@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import AppCards from './components/CardsTask/AppCards';
 import Decomp from './components/decomposition';
+import Collapse from './components/Collapse/Collapse';
 
 import './App.css';
 
@@ -17,8 +18,8 @@ function App() {
       component: <Decomp />
     },
     {
-      name: "",
-      component: ''
+      name: "coll",
+      component: <Collapse />
     }
   ]
 
@@ -33,7 +34,7 @@ function App() {
       <header className="header_main">
         <button className='cards' onClick={handleClick}>Задание №1(Карточки)</button>
         <button className='decomposition' onClick={handleClick}>Задание №2(Гундекс)</button>
-        <button className="photo" onClick={handleClick}>Задание №3()</button>
+        <button className="coll" onClick={handleClick}>Задание №3(Collapse)</button>
       </header>
       <div className={"app_" + currentClass}>{app}</div>
     </div>
